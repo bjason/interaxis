@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>InterAxis</title>
+
+    <script src='js/d3.v5.min.js'></script>
+    <script src='js/list.js'></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="init()">
+    <div id="header">
+        <h1 class="title"><span style="color:#3B3B3B">InterAxis</span></h1>
+        <div class="topnav-right">
+            <div class="search bar8 text">
+                <form>
+                    <a href="index.html">Home</a>
+                    <input type="text" placeholder="Search a car" id="searchContent" onkeyup="searchList()" onkeydown="if (event.keyCode == 13) return false;">
+                    <button type="button"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="carlist_div">
+        <div id="error_info"></div>
+        <div id="carlist"></div>
+    </div>
+
+    <div id="footer" style="text-align:left;">
+        <h1 class="intro">About</h1>
+        <p>In this project, we implement this InterAxis Visualization to helper users compare different car models by
+            extending dimension of axis in a tranditional scatterplot following the paper:
+            <a href="https://ieeexplore.ieee.org/abstract/document/7192671">InterAxis: Steering Scatterplot Axes via
+                Observation-Level Interaction</a></p>
+        <p>This project is made possible by <a href="https://d3js.org/">D3.js</a> library. </p>
+        <p>Updated: Mar 18, 2018</p>
+        <p>Created By: <a href="https://github.com/bjason" target="_blank">Yuchu Lei</a>,
+            and <a href="https://github.com/tianranwangcs" target="_blank">Tianran Wang</a>.</p>
+    </div>
+</body>
+
+</html>

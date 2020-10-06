@@ -1,0 +1,381 @@
+body {
+    font: 12px Constantia, Baskerville;
+}
+
+footer,
+header {
+    display: block;
+}
+
+#header {
+    margin: 0 0 0.2em 0;
+    border-bottom: thin solid #D4D4D4;
+    padding: 10 40 40 40;
+}
+
+#header h1 {
+    font-size: 20pt;
+    text-align: left;
+    margin-top: 0;
+    border-right: thin solid #D4D4D4;
+}
+
+#header p {
+    font-size: 15pt;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 5px;
+}
+
+h1.title {
+    width: 140px;
+    float: left;
+    position: relative;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    font-family: Constantia, Baskerville;
+}
+
+p.title {
+    margin-left: 170px;
+}
+
+#footer {
+    position: absolute;
+    width: 100%;
+}
+
+#footer p {
+    font-size: 12pt;
+    padding-left: 2%;
+}
+
+.intro {
+    font-size: 15pt;
+    padding: 10px;
+    background: #F1F1F1;
+    border-bottom: thin solid #D4D4D4;
+    text-align: left;
+    color: #3B3B3B
+}
+
+.topnav {
+    overflow: hidden;
+    /* position: fixed; */
+    top: 3%;
+    right: 11%;
+    z-index: 1000;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a,
+.topnav div {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+    float: right;
+}
+
+.bar8 form {
+    height: 42px;
+}
+
+.bar8 input {
+    width: 95px;
+    padding: 15px 42px 0 15px;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    transition: .3s linear;
+    z-index: 2;
+    display: inline-block;
+}
+
+.bar8 input:focus {
+    width: 200px;
+    z-index: 1;
+    border-bottom: 2px solid #F9F0DA;
+}
+
+.bar8 button {
+    right: 20;
+    display: inline-block;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+.searchContent {
+    width: 100%;
+    height: 42px;
+    padding-left: 13px;
+}
+
+button {
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+    position: absolute;
+    background-color: transparent;
+}
+
+div .title {
+    display: inline-block;
+    font-style: italic;
+}
+
+.infolabel {
+    position: fixed;
+    width: 230px;
+    height: auto;
+    color: #545454;
+    background-color: #fff;
+    border: solid thin #999;
+    -moz-border-radius: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 0.99;
+    z-index: 10000000000;
+    text-align: left;
+    font-family: Constantia, Baskerville;
+}
+
+.attrPanel {
+    position: fixed;
+    width: 150px;
+    height: auto;
+    color: #545454;
+    background-color: #fff;
+    border: solid thin #999;
+    -moz-border-radius: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 0.99;
+    z-index: 100;
+    text-align: left;
+    font-family: Constantia, Baskerville;
+    font-size: 8pt;
+    line-height: 4px;
+}
+
+.infolabel h1 {
+    font-size: 14pt;
+    margin: 0;
+    padding-bottom: 8px;
+    display: inline-block;
+    line-height: 1em;
+    color: #3B3B3B;
+}
+
+.infolabel h3 {
+    font-size: 2px;
+    line-height: .2em;
+}
+
+.infolabel p {
+    font-size: 13pt;
+    font-weight: normal;
+    color: #545454;
+    padding: 2px;
+    margin: 0;
+}
+
+.infolabel h2 {
+    font-size: 13pt;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: #3B3B3B;
+    font-weight: normal;
+}
+
+.infolabel b {
+    font-size: 13pt;
+    clear: both;
+}
+
+.round_btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D4D4D4;
+    border: gray;
+    color: #545454;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0;
+    font-size: 12px;
+}
+
+.wrapper {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid; */
+}
+
+.addDiv {
+    float: left;
+}
+
+svg {
+    font: 10px Constantia, Baskerville;
+}
+
+#X .x.axis {
+    font-family: Constantia, Baskerville;
+}
+
+#Y .x.axis {
+    font-family: Constantia, Baskerville;
+}
+
+#scplot {
+    background-color: #ffffff;
+    width: 100%;
+    height: 700px;
+}
+
+#SC .axis {
+    font-size: 1.5em;
+}
+
+#DROP rect {
+    stroke-width: 2;
+    stroke-opacity: 0.5;
+}
+
+#DROP rect.positive {
+    fill: #81e985;
+    stroke: #2ca02c;
+}
+
+#DROP rect.negative {
+    fill: #e98881;
+    stroke: #a02c2c;
+}
+
+#DROP rect:hover {
+    opacity: 0.5;
+}
+
+.bar.positive {
+    fill: #2ca02c;
+    opacity: 0.7;
+    padding-bottom: 1px;
+}
+
+.bar.negative {
+    fill: #a02c2c;
+    opacity: 0.7;
+    padding-bottom: 1px;
+}
+
+.dummy.dragBarTop {
+    fill: white;
+    opacity: 1;
+    cursor: ew-resize;
+    fill-opacity: 0.8;
+    stroke: grey;
+}
+
+.errorbar {
+    stroke: black;
+    stroke-width: 2;
+    opacity: 1;
+}
+
+td,
+th {
+    padding: 1px 4px;
+    word-wrap: break-word;
+}
+
+th {
+    white-space: nowrap;
+}
+
+table {
+    font: 14px sans-serif;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 360px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0.5em 0em 0.5em 0em;
+    width: 100%;
+}
+
+ul li {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0em;
+    padding: 0em 1em;
+}
+
+circle {
+    fill: #63cbd3;
+    stroke: #3388c5;
+    fill-opacity: 0.2;
+    stroke-width: 1.2px;
+    stroke-opacity: 0.5;
+    cursor: move;
+}
+
+circle.positive_dropped {
+    fill: #81e985;
+    stroke: #2ca02c;
+    fill-opacity: 0.5;
+}
+
+circle.negative_dropped {
+    fill: #e98881;
+    stroke: #a02c2c;
+    fill-opacity: 0.5;
+}
+
+circle.highlighted {
+    stroke: black;
+    stroke-width: 2.5px;
+    fill-opacity: 1;
+}
+
+circle.searchRes {
+    fill: #dd9001;
+    stroke: #9e8203;
+    stroke-width: 2.5px;
+}
+
+circle:hover {
+    stroke: black;
+    stroke-width: 2.5px;
+    fill-opacity: 1;
+}
+
+#SC rect {
+    fill: #ffffff;
+}
+
+#SC line {
+    stroke: #cccccc;
+}
