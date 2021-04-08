@@ -34,6 +34,7 @@ related ones. Since the car dataset is already in csv format, the data prepro-
 cessing procedure is trivial. Here we just rename and remove some attributes
 after loading the dataset.
 
+![](cover.png)
 
 ```
 Figure 1: Overview of our implementation.
